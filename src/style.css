@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #0b0b0e;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  display: grid;
+  place-items: center;
+}
+
+.ai-text {
+  color: #5c7cfa;
+}
+
+h1 {
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  font-size: 4rem;
+}
+
+#result {
+  aspect-ratio: 1/1;
+  max-width: 512px;
+  width: 100%;
+  background: #3a3a43;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 512px;
+  margin-top: 2rem;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin: 10px 0;
+  font-size: 1.3rem;
+  border-radius: 9px;
+}
+
+textarea::placeholder {
+  color: #7d7d7d;
+  font-size: 1.2rem;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  background-color: #1b1b1e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+button:hover {
+  background-color: #2b2b2e;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.hidden {
+  display: none;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 25rem) {
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .textarea {
+    width: 100%;
+    height: 50px;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .textarea {
+    width: 100%;
+    height: 50px;
+  }
+}

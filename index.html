@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B.K. &mdash; AI Photo Generator</title>
+  </head>
+  <body>
+    <main>
+      <h1><span class="ai-text">AI</span> 🤖 Photo Generator</h1>
+
+      <div id="result">Resulting image will appear here</div>
+
+      <form>
+        <label for="prompt">Prompt</label>
+        <textarea
+          class="textarea"
+          name="prompt"
+          maxlength="160"
+          placeholder="For best results, try to be descriptive"
+        ></textarea>
+
+        <button class="button" type="submit">Dream</button>
+      </form>
+    </main>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
